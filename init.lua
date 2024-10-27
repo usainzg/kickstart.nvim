@@ -1001,6 +1001,5 @@ vim.keymap.set('n', '<C-S-N>', function()
 end)
 
 require('oil').setup()
--- require('hardtime').setup()
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
