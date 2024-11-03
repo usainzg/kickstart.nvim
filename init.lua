@@ -1,6 +1,4 @@
--- MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation,
--- which is very useful when you're not exactly sure of what you're looking for.
---
+-- "<space>sh" to [s]earch the [h]elp documentation,
 -- If you experience any errors while trying to install kickstart, run `:checkhealth` for more info.
 
 -- Set mapleader -> :help mapleader
@@ -14,8 +12,6 @@ vim.g.have_nerd_font = true
 
 -- Make line numbers default
 vim.opt.number = true
--- You can also add relative line numbers, to help with jumping.
---  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
@@ -149,8 +145,8 @@ vim.opt.rtp:prepend(lazypath)
 --  To update plugins you can run
 --    :Lazy update
 --
--- NOTE: Here is where you install your plugins.
 require('lazy').setup({
+  -- HERE TO INSTALL PLUGINS
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'tpope/vim-fugitive',
   'mbbill/undotree',
@@ -814,7 +810,7 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'cpp', 'latex', 'rust', 'python', 'mlir' },
+      ensure_installed = { 'bash', 'c', 'cpp', 'latex', 'rust', 'python' },
       ignore_install = { 'javascript', 'vim' },
       -- Autoinstall languages that are not installed
       auto_install = true,
