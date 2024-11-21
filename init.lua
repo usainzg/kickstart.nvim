@@ -823,7 +823,7 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'cpp', 'latex', 'rust', 'python', 'mlir' },
+      ensure_installed = { 'bash', 'c', 'cpp', 'latex', 'rust', 'python' },
       ignore_install = { 'javascript', 'vim' },
       -- Autoinstall languages that are not installed
       auto_install = true,
