@@ -801,6 +801,7 @@ require('lazy').setup({
           { name = 'luasnip' },
           { name = 'path' },
           { name = 'nvim_lsp_signature_help' },
+          { name = 'neorg' },
         },
       }
     end,
@@ -883,6 +884,7 @@ require('lazy').setup({
     opts = {
       ensure_installed = { 'bash', 'c', 'cpp', 'latex', 'rust', 'python' },
       ignore_install = { 'javascript', 'vim' },
+      -- ignore_install = { 'org' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
