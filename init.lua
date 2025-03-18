@@ -66,14 +66,10 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- Update buffers if file were changed outside
-vim.o.autoread = true
-
--- Other options
-vim.o.termguicolors = true
-vim.o.hlsearch = false
-vim.wo.signcolumn = 'yes'
-vim.o.completeopt = 'menuone,noselect'
+-- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
+-- instead raise a dialog asking if you wish to save the current file(s)
+-- See `:help 'confirm'`
+vim.opt.confirm = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
